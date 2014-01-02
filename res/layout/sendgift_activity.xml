@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top_title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvId_sendGift_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ibId_sendGift_title_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_backkey"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibId_sendGift_title_refresh"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_refreshkey" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llId_sendGift_show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvId_sendGift_items"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:dividerHeight="2dp"
+            android:divider="@color/white"
+            android:background="@color/light_gray"
+            android:cacheColorHint="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

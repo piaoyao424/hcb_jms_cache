@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_goal_gray_bg"
+    android:orientation="horizontal" >
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/myjiesuan_item_numdate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/my_consume_list_item_bg"
+            android:gravity="center"
+            android:layout_weight="1.8"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp" />
+		<TextView
+            android:id="@+id/myjiesuan_item_huibipay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/my_consume_list_item_bg"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp" />
+		<TextView
+            android:id="@+id/myjiesuan_item_cardpay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/my_consume_list_item_bg"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp" />
+		<TextView
+            android:id="@+id/myjiesuan_item_totalmoney"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/my_consume_list_item_bg"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp" />
+       <TextView
+            android:id="@+id/myjiesuan_item_totaljiesuan"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/my_consume_list_item_bg"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

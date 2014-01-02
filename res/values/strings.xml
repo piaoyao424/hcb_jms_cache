@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">惠车宝加盟商</string>
+    <string name="head_address">北京市石景山区八大处高科技园区西井路3-3-5947</string>
+    <string name="branch_address">宜昌市东山开发区珠海路8号412室</string>
+    <string name="postcode">4330000</string>
+    <string name="phone">0717-6300407</string>
+    <string name="fax">0717-6300407</string>
+    <string name="website">www.chinahcb.net</string>
+    <string name="choicemonth">选择月份</string>
+    <string name="choiceyear">选择年份</string>
+    <string name="chaxun"> 查询</string>
+    <string name="riqi">日期</string>
+    <!-- temp path -->
+    <string name="TEMP_PATH">/calltaxi/temp</string>
+
+</resources>

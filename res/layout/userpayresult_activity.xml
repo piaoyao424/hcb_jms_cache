@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+       />
+
+
+       <LinearLayout
+             android:id = "@+id/llId_payresult_ll1"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_marginBottom="20dp"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 style="@style/login_regist_textview"
+                 android:textColor="@color/black"
+                 android:textSize="18sp"
+                 android:text="应付款金额为" />
+
+             <ImageView style="@style/login_regist_imageseperator" />
+
+             <TextView
+                 android:id="@+id/tvId_payresult_paymoney"
+                 android:textColor="@color/red"
+                 android:textSize="30sp"
+                 style="@style/login_regist_editview"
+                 
+                  />
+                  
+       </LinearLayout>
+       <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_marginBottom="20dp"
+             android:layout_below="@id/llId_payresult_ll1"
+             android:layout_marginTop="3dp"
+             android:orientation="horizontal" >
+			<Button
+               android:id="@+id/btnId_payresult_ok"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"
+               android:background="@drawable/selector_driver_grab"
+               android:text="付款"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp" />
+          <Button
+               android:id="@+id/btnId_payresult_cancel"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="10dp"
+               android:layout_weight="1"
+               android:background="@drawable/selector_driver_grab"
+               android:text="返回"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp" />        
+       </LinearLayout>
+    
+
+</LinearLayout>

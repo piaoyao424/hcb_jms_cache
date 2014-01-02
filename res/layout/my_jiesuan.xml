@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/top_title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvId_jiesuan_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ibId_jiesuan_title_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_backkey"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibId_jiesuan_title_refresh"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_refreshkey" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mygoal_margin_left"
+        android:layout_marginRight="@dimen/mygoal_margin_right"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/spId_jiesuan_year"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/record_time_block_bg"
+                    android:paddingRight="10dp"
+                    android:prompt="@string/choiceyear"
+                    android:visibility="visible" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/spId_jiesuan_month"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/record_time_block_bg"
+                    android:paddingRight="10dp"
+                    android:prompt="@string/choicemonth"
+                    android:visibility="visible" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.52" >
+
+                <Button
+                    android:id="@+id/btnId_jiesuan_chaxun"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_verify_btn"
+                    android:gravity="center"
+                    android:text="@string/chaxun"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+		            android:id="@+id/myjiesuan_numdate"
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/my_consume_list_item_bg"
+		            android:gravity="center"
+		            android:layout_weight="2.8"
+		            android:text="日期"
+		            android:textColor="@color/main_text_color"
+		            android:textSize="12sp" />
+				<TextView
+		            android:id="@+id/myjiesuan_huibipay"
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/my_consume_list_item_bg"
+		            android:gravity="center"
+		            android:layout_weight="3"
+		            android:text="惠币"
+		            android:textColor="@color/main_text_color"
+		            android:textSize="12sp" />
+				<TextView
+		            android:id="@+id/myjiesuan_cardpay"
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/my_consume_list_item_bg"
+		            android:gravity="center"
+		            android:layout_weight="3"
+		            android:text="刷卡"
+		            android:textColor="@color/main_text_color"
+		            android:textSize="12sp" />
+				<TextView
+		            android:id="@+id/myjiesuan_totalmoney"
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/my_consume_list_item_bg"
+		            android:gravity="center"
+		            android:layout_weight="3"
+		            android:text="合计"
+		            android:textColor="@color/main_text_color"
+		            android:textSize="12sp" />
+				<TextView
+		            android:id="@+id/myjiesuan_totaljiesuan"
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/my_consume_list_item_bg"
+		            android:gravity="center"
+		            android:layout_weight="3"
+		            android:text="结算金额"
+		            android:textColor="@color/main_text_color"
+		            android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/llId_myjiesuan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/white"
+            android:dividerHeight="4dp"
+            android:fadingEdge="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="@null" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_bar" />
+
+     <!-- 
+        android:background="@drawable/login_block_bg"
+         -->
+    <LinearLayout
+            android:id="@+id/llId_usercheck_costitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+		<ListView
+	        android:id="@+id/lvId_paycheck_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="200dp"
+	        android:dividerHeight="1dp"
+	        android:divider="#FFd7d7d7"
+	        android:listSelector="@null"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:fadingEdge="none"
+	        android:scrollbars="vertical"
+	        />
+	</LinearLayout>
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="消费合计为"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+           	<TextView
+                android:id="@+id/tvId_usercheck_showtotal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="消费合计"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+     </LinearLayout>
+ 
+
+        <LinearLayout
+            android:id="@+id/llId_usercheck_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/login_regist_editlayout"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_account_icon" />
+
+                <ImageView style="@style/login_regist_imageseperator" />
+
+                <EditText
+                    android:id="@+id/etId_usercheck_name"
+                    style="@style/login_regist_editview"
+                    android:hint="手机号码"
+                    android:inputType="phone" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+           	 	android:layout_marginBottom="5dp"
+            	android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnId_usercheck_payok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_verify_btn"
+                    android:text="提交订单"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+				<Button
+                    android:id="@+id/btnId_usercheck_paycancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_driver_grab"
+                    android:text="取消"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

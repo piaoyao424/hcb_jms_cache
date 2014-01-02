@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+    <include layout="@layout/top_title_bar" />
+	<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+         >
+    <TextView
+        android:id="@+id/tvId_paychoice_showtongji"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:gravity="center_vertical"
+	    android:background="@color/gray"
+	    android:text=""
+	    android:textColor="#000000"
+	    android:textSize="15sp" />
+   <TextView
+       
+         android:layout_width="150dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:gravity="center_vertical"
+         android:background="@drawable/button_green"
+         android:text="方式一:惠币消费"
+         android:textColor="#000000"
+         android:textSize="20sp" />
+   <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+    	android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+         >
+         <TextView
+	        android:id="@+id/tvId_paychoice_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:text="会员: "
+	        />
+	     <TextView
+	        android:id="@+id/tvId_paychoice_showname"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="2"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:hint="会员手机号"
+	        />
+         </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+    	android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+         >
+       <TextView
+	        android:id="@+id/tvId_paychoice_yue"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="2"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:text="惠币余额"
+	        />
+       <TextView
+	        android:id="@+id/tvId_paychoice_showyue"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/red"
+	        android:gravity="center|left"
+	        android:hint="显示金钱"
+	        /> 
+	    </LinearLayout>
+    <Button
+         android:id="@+id/btnId_paychoice_huibipay"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:background="@drawable/selector_verify_btn"
+         android:gravity="center"
+         android:text="确认惠币消费"
+         android:textColor="@color/white"
+         android:textSize="20sp" />
+   
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:orientation="vertical"
+	    android:layout_marginTop="3dp"
+	    android:layout_weight="1"
+       >
+    <TextView
+         android:layout_width="150dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:gravity="center_vertical"
+         android:background="@drawable/button_green"
+         android:text="方式二:刷卡消费"
+         android:textColor="#000000"
+         android:textSize="20sp" />
+  
+       <TextView
+	        android:id="@+id/tvId_paychoice_shuoming"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="@color/red"
+	        android:gravity="center|left"
+	        android:hint="注：请商户确认会员已刷卡，POS机已成功消费后点击确认按钮。"
+	        /> 
+	    
+    <Button
+         android:id="@+id/btnId_paychoice_cardpay"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:background="@drawable/selector_verify_btn"
+         android:gravity="center"
+         android:text="请确认会员已刷卡"
+         android:textColor="@color/white"
+         android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

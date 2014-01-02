@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+      <include layout="@layout/top_title_bar" />
+	<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+         >
+   <TextView
+        android:id="@+id/tvId_payhuibi_showtongji"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:gravity="center_vertical"
+	    android:background="@color/gray"
+	    android:text=""
+	    android:textColor="#000000"
+	    android:textSize="15sp" />
+   <TextView
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:gravity="center_vertical"
+         android:text="请将手机给到会员输入密码!"
+         android:textColor="#000000"
+         android:background="@drawable/button_s_select"
+         android:textSize="20sp" />
+   
+   <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+    	android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+         >
+         <TextView
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:text="会员: "
+	        />
+	     <TextView
+	        android:id="@+id/tvId_payhuibi_showname"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="2"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:hint="会员手机号"
+	        />
+         </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+    	android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+         >
+         <TextView
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:text="惠币余额: "
+	        />
+	     <TextView
+	        android:id="@+id/tvId_payhuibi_showyue"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_weight="2"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:hint="余额"
+	        />
+         </LinearLayout>
+	 <TextView
+	        android:id="@+id/tvId_payhuibi_queren"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:textSize="30sp"
+	        android:layout_marginLeft="5dp"
+         	android:layout_marginRight="5dp"
+	        android:textColor="@color/black"
+	        android:gravity="center|left"
+	        android:hint="本次消费将扣除x个惠币，请会员确认"
+	        />  
+   <EditText
+         android:id="@+id/etId_payhuibi_pwd"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:hint="请输入密码"
+         android:gravity="center"
+         android:textSize="15sp"
+         android:inputType="textPassword" >
+          </EditText> 
+    <Button
+         android:id="@+id/btnId_payhuibi_ok"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:background="@drawable/selector_verify_btn"
+         android:gravity="center"
+         android:text="会员确认本次消费"
+         android:textColor="@color/white"
+         android:textSize="30sp" />
+   
+	</LinearLayout>
+    
+
+</LinearLayout>

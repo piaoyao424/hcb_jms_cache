@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/top_title_bar" />
+   <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         >
+    <TextView 
+	    android:id="@+id/tvId_ggconten_biaoti"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+		
+		android:background="@drawable/button_b_normal"
+		android:textColor="@color/black"
+		android:textSize="18sp"
+		android:text="" />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         >
+    <TextView 
+	    android:id="@+id/tvId_ggconten_riqi"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+		android:textColor="@color/red"
+		android:textSize="18sp"
+		android:text="" />
+	</LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+         >
+    <TextView 
+	    android:id="@+id/tvId_ggconten_neirong"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:singleLine="false"
+		android:textColor="@color/black"
+		android:textSize="18sp"
+		android:text="" />
+	</LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         >
+    <TextView 
+	    android:id="@+id/tvId_ggconten_name"
+		android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="right"
+		android:textColor="@color/red"
+		android:textSize="18sp"
+		android:text="惠车宝" />
+</LinearLayout>
+</LinearLayout>
